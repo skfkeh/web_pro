@@ -5,8 +5,367 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Project</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-    
+    <div id="wrap">
+        <div class="intro_bg" id="home">
+            <div class="header">
+                <div class="searchArea">
+                    <form style="margin:0px;">
+                        <input id="search_bar" type="search" placeholder="Search">
+                        <span id="search_btn">검색</span>
+                    </form>
+                    
+                </div>
+                <ul class="nav">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#sponge">SPONGE</a></li>
+                    <li><a href="#patrick">PATRICK</a></li>
+                    <li><a href="#squid">SQUIDWARD</a></li>
+                    <li><a href="#crap">CRAP</a></li>
+                </ul>
+                <div class="dog_land"></div>
+            </div>
+            <div class="intro_text">
+                <h1>SpongeBob <br>Square<span id="plankton">P</span>ants</h1>
+                <h2>with. KRABBY PATTY!!</h2>
+                <h4 id="start" class="info_text">Start</h4>
+                <div id="main" style="display:flex; text-align:center; justify-content: center; ">
+                    <div id="info_text" style="display:none;">
+                        <p>게살버거를 만들기 위해 6종류의 재료를 모아주세요!!<br>
+                        우선 게살을 구해봅시다.<br>
+                        좌측 상단의 검색창에 <b>"스펀지밥"</b>을 입력 후.<br>
+                        검색 버튼을 <b>"10번"</b>눌러주세요!!</p>
+                    </div>
+                    <div id="burger"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image1"></div>
+        <div class="text" id="sponge">
+            <div class="eachblock">
+                <div class="sponge_header">
+                    <h3 style="color:#c17629">스폰지밥</h3>
+                    <span id="findbread"> < CLICK HERE > </span>
+                </div>
+                <div class="sponge_info">
+                    <p id="sponge_title">일하는 즐거움을 깨달은 '스폰지밥'!!!</p>
+                    <img src="./img/sponge_info.jpeg" width="300px" id="sponge_img">
+                    <p>그의 모험을 도와주기 위해서는 운도 좋아야 합니다.<br>
+                        랜덤 숫자를 3회 이상 맞춰 오늘의 운세를 알아볼까요??!</p>
+                    <p id="sponge_review">(랜덤 숫자게임을 하려면 위 'CLICK HERE'을 클릭해주세요.)</p>
+                </div>
+                <div class="sponge_body">
+                    <h3>숫자 맞히기 게임</h3>
+                    <p>1에서 100 사이의 수를 입력하세요.</p>
+                    <form action="">
+                        <label><input type="text" id="try" autofocus></label>
+                        <input type="button" value="확인" id="check" class="btn btn-1">
+                        <input type="reset" value="다시" id="reset" class="btn btn-2">
+                    </form> <br>
+                    <div id="number" class="info"></div>
+                    <div id="display" class="output"></div>
+                    <div id="counter" class="footer"></div>
+                </div>
+                <script src="./script/random_game.js"></script>
+            </div>
+            
+        </div>
+
+        <div class="image2"></div>
+        <div class="text" id="patrick">
+            <div class="eachblock">
+                <div class="patrick_header">
+                    <h3 style="color:white;">뚱이</h3>
+                    <span id="findtomato"> < CLICK HERE > </span>
+                </div>
+                <div class="patrick_info">
+                    <p>스폰지밥의 불가사리 절친, 뚱이!!<br>그의 돌집에서 기르던 토마토를 받아 게살버거에 넣으려고 합니다.<br>숨은 버튼 3개를 찾아주세요!!</p>
+                    <img src="./img/patrick_home.jpeg" width="500px">
+                    <p id="patrick_review">(숨은 버튼을 찾기 게임을 하려면 위 'CLICK HERE'을 클릭해주세요.)</p>
+                </div>
+                <div class="patrick_body">
+                    <table>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 255, 0);"></td>
+                            <td id="on" style="background-color: rgb(255, 255, 0);"></td>
+                            <td id="on" style="background-color: rgb(255, 255, 5);"></td>
+                            <td id="on" style="background-color: rgb(255, 245, 15);"></td>
+                            <td id="on" style="background-color: rgb(255, 235, 25);"></td>
+                            <td id="on" style="background-color: rgb(255, 225, 35);"></td>
+                            <td id="on" style="background-color: rgb(255, 215, 45);"></td>
+                            <td id="on" style="background-color: rgb(255, 205, 55);"></td>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175, 85);"></td>
+                            <td id="on" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="om" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                        </tr>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 255, 0);"></td>
+                            <td id="on" style="background-color: rgb(255, 255, 5);"></td>
+                            <td id="on" style="background-color: rgb(255, 245, 15);"></td>
+                            <td id="on" style="background-color: rgb(255, 235, 25);"></td>
+                            <td id="on" style="background-color: rgb(255, 225, 35);"></td>
+                            <td id="on" style="background-color: rgb(255, 215, 45);"></td>
+                            <td id="on" style="background-color: rgb(255, 205, 55);"></td>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175,85);"></td>
+                            <td id="on" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="on" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                            <td id="on" style="background-color: rgb(255, 85, 175);"></td>
+                        </tr>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 255, 5);"></td>
+                            <td id="on" style="background-color: rgb(255, 245, 15);"></td>
+                            <td id="on" style="background-color: rgb(255, 235, 25);"></td>
+                            <td id="on" style="background-color: rgb(255, 225, 35);"></td>
+                            <td id="on" style="background-color: rgb(255, 215, 45);"></td>
+                            <td id="on" style="background-color: rgb(255, 205, 55);"></td>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175, 85);"></td>
+                            <td id="an" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="on" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                            <td id="on" style="background-color: rgb(255, 85, 175);"></td>
+                            <td id="on" style="background-color: rgb(255, 75, 185);"></td>
+                        </tr>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 245, 15);"></td>
+                            <td id="on" style="background-color: rgb(255, 235, 25);"></td>
+                            <td id="on" style="background-color: rgb(255, 225, 35);"></td>
+                            <td id="on" style="background-color: rgb(255, 215, 45);"></td>
+                            <td id="on" style="background-color: rgb(255, 205, 55);"></td>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175, 85);"></td>
+                            <td id="on" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="on" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                            <td id="on" style="background-color: rgb(255, 85, 175);"></td>
+                            <td id="on" style="background-color: rgb(255, 75, 185);"></td>
+                            <td id="on" style="background-color: rgb(255, 65, 195);"></td>
+                        </tr>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 235, 25);"></td>
+                            <td id="on" style="background-color: rgb(255, 225, 35);"></td>
+                            <td id="on" style="background-color: rgb(255, 215, 45);"></td>
+                            <td id="on" style="background-color: rgb(255, 205, 55);"></td>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175, 85);"></td>
+                            <td id="on" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="on" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                            <td id="on" style="background-color: rgb(255, 85, 175);"></td>
+                            <td id="on" style="background-color: rgb(255, 75, 185);"></td>
+                            <td id="on" style="background-color: rgb(255, 65, 195);"></td>
+                            <td id="on" style="background-color: rgb(255, 55, 205);"></td>
+                        </tr>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 225, 35);"></td>
+                            <td id="on" style="background-color: rgb(255, 215, 45);"></td>
+                            <td id="on" style="background-color: rgb(255, 205, 55);"></td>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175, 85);"></td>
+                            <td id="on" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="on" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                            <td id="on" style="background-color: rgb(255, 85, 175);"></td>
+                            <td id="on" style="background-color: rgb(255, 75, 185);"></td>
+                            <td id="on" style="background-color: rgb(255, 65, 195);"></td>
+                            <td id="on" style="background-color: rgb(255, 55, 205);"></td>
+                            <td id="on" style="background-color: rgb(255, 45, 215);"></td>
+                        </tr>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 215, 45);"></td>
+                            <td id="on" style="background-color: rgb(255, 205, 55);"></td>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175, 85);"></td>
+                            <td id="on" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="on" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                            <td id="on" style="background-color: rgb(255, 85, 175);"></td>
+                            <td id="on" style="background-color: rgb(255, 75, 185);"></td>
+                            <td id="on" style="background-color: rgb(255, 65, 195);"></td>
+                            <td id="on" style="background-color: rgb(255, 55, 205);"></td>
+                            <td id="on" style="background-color: rgb(255, 45, 215);"></td>
+                            <td id="on" style="background-color: rgb(255, 35, 225);"></td>
+                        </tr>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 205, 55);"></td>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175, 85);"></td>
+                            <td id="on" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="on" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                            <td id="on" style="background-color: rgb(255, 85, 175);"></td>
+                            <td id="on" style="background-color: rgb(255, 75, 185);"></td>
+                            <td id="on" style="background-color: rgb(255, 65, 195);"></td>
+                            <td id="on" style="background-color: rgb(255, 55, 205);"></td>
+                            <td id="on" style="background-color: rgb(255, 45, 215);"></td>
+                            <td id="on" style="background-color: rgb(255, 35, 225);"></td>
+                            <td id="on" style="background-color: rgb(255, 25, 235);"></td>
+                        </tr>
+                        <tr>
+                            <td id="on" style="background-color: rgb(255, 195, 65);"></td>
+                            <td id="on" style="background-color: rgb(255, 185, 75);"></td>
+                            <td id="on" style="background-color: rgb(255, 175, 85);"></td>
+                            <td id="on" style="background-color: rgb(255, 165, 95);"></td>
+                            <td id="on" style="background-color: rgb(255, 155, 105);"></td>
+                            <td id="on" style="background-color: rgb(255, 145, 115);"></td>
+                            <td id="on" style="background-color: rgb(255, 135, 125);"></td>
+                            <td id="on" style="background-color: rgb(255, 125, 135);"></td>
+                            <td id="on" style="background-color: rgb(255, 115, 145);"></td>
+                            <td id="on" style="background-color: rgb(255, 105, 155);"></td>
+                            <td id="on" style="background-color: rgb(255, 95, 165);"></td>
+                            <td id="on" style="background-color: rgb(255, 85, 175);"></td>
+                            <td id="on" style="background-color: rgb(255, 75, 185);"></td>
+                            <td id="on" style="background-color: rgb(255, 65, 195);"></td>
+                            <td id="on" style="background-color: rgb(255, 55, 205);"></td>
+                            <td id="on" style="background-color: rgb(255, 45, 215);"></td>
+                            <td id="am" style="background-color: rgb(255, 35, 225);"></td>
+                            <td id="on" style="background-color: rgb(255, 25, 235);"></td>
+                            <td id="on" style="background-color: rgb(255, 15, 245);"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(255, 185, 75);"></td>
+                            <td style="background-color: rgb(255, 175, 85);"></td>
+                            <td style="background-color: rgb(255, 165, 95);"></td>
+                            <td style="background-color: rgb(255, 155, 105);"></td>
+                            <td style="background-color: rgb(255, 145, 115);"></td>
+                            <td style="background-color: rgb(255, 135, 125);"></td>
+                            <td style="background-color: rgb(255, 125, 135);"></td>
+                            <td style="background-color: rgb(255, 115, 145);"></td>
+                            <td style="background-color: rgb(255, 105, 155);"></td>
+                            <td style="background-color: rgb(255, 95, 165);"></td>
+                            <td style="background-color: rgb(255, 85, 175);"></td>
+                            <td style="background-color: rgb(255, 75, 185);"></td>
+                            <td style="background-color: rgb(255, 65, 195);"></td>
+                            <td style="background-color: rgb(255, 55, 205);"></td>
+                            <td style="background-color: rgb(255, 45, 215);"></td>
+                            <td style="background-color: rgb(255, 35, 225);"></td>
+                            <td style="background-color: rgb(255, 25, 235);"></td>
+                            <td style="background-color: rgb(255, 15, 245);"></td>
+                            <td style="background-color: rgb(255, 5, 255);"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(255, 175, 85);"></td>
+                            <td style="background-color: rgb(255, 165, 95);"></td>
+                            <td style="background-color: rgb(255, 155, 105);"></td>
+                            <td style="background-color: rgb(255, 145, 115);"></td>
+                            <td style="background-color: rgb(255, 135, 125);"></td>
+                            <td style="background-color: rgb(255, 125, 135);"></td>
+                            <td style="background-color: rgb(255, 115, 145);"></td>
+                            <td style="background-color: rgb(255, 105, 155);"></td>
+                            <td style="background-color: rgb(255, 95, 165);"></td>
+                            <td style="background-color: rgb(255, 85, 175);"></td>
+                            <td style="background-color: rgb(255, 75, 185);"></td>
+                            <td style="background-color: rgb(255, 65, 195);"></td>
+                            <td style="background-color: rgb(255, 55, 205);"></td>
+                            <td style="background-color: rgb(255, 45, 215);"></td>
+                            <td style="background-color: rgb(255, 35, 225);"></td>
+                            <td style="background-color: rgb(255, 25, 235);"></td>
+                            <td style="background-color: rgb(255, 15, 245);"></td>
+                            <td style="background-color: rgb(255, 5, 255);"></td>
+                            <td style="background-color: rgb(255, 0, 255);"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="image3"></div>
+        <div class="text" id="squid">
+            <div class="eachblock">
+                <div class="squid_header">
+                    <h3 style="color:black">징징이</h3>
+                    <span id="findcheeze"> < CLICK HERE > </span>
+                </div>
+                <div class="squid_info">
+                    <p>이런.. 징징이의 클라리넷 연주를 방해해버렸습니다.</p>
+                    <img src="./img/squid_cla.jpeg" width="500px">
+                    <p>잡히면 맞을지 모릅니다.<br>HOME 메뉴의 각 버튼을 활용해 빠르게 도망다니세요!!<br><span id="cheeze_answer">순서 : SP - PA - CR - HO - SQ</span></p>
+                </div>
+                <div class="squid_body">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="image4"></div>
+        <div class="text" id="crap">
+            <div class="eachblock">
+                <div class="crap_header">
+                    <h3 style="color:white">집게사장</h3>
+                    <span id="findsource" style="display:none"> < CLICK HERE > </span>
+                    <p>집게사장님은 오늘도 돈 냄새를 맡고 계시는군요..</p>
+                    <img src="./img/crap_money.jpeg" width="300px">
+                </div>
+                <div class="crap_info">
+                    <p>소스를 얻어내기 위해선 매력을 어필해야할 것 같습니다.<br>전문기술(개발자모드)를 활용해봅시다.</p>
+                    <p id="crap_review">(Chrome의 개발자모드를 활용해 숨어있는 'CLICK HERE'을 'inline-block'으로 바꿔주세요.)</p>
+                </div>
+                <div class="crap_body">
+                    <input id="source_answer" type="textbox" style="width:300px; height:20px;">
+                    <p id="crap_source">Textbox가 생겼군요!! 정답은 Chrome의 개발자모드의 console 창에 있습니다!!<br>
+                                        'console 내용'을 Textbox에 복붙하고 'CLICK HERE'을 눌러주세요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
 </body>
 </html>

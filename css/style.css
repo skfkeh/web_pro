@@ -1,0 +1,315 @@
+* {
+    font-family: 'sponge', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color:black;
+}
+
+td {
+    border-radius:25px;
+    width:40px;
+    height:40px;
+}
+
+form {
+    margin-top:40px;
+  }
+  input[type="text"] {
+    width:120px;
+    height:40px;
+    padding:0px 20px 0px 20px;
+    border:#ccc 1px solid;
+  }
+  
+  .btn {
+    width:50px;
+    height:40px;        
+    /* border-radius:50%; */
+    padding:10px 3px;
+    border:#ccc 1px solid;        
+          
+  }      
+  .btn-1 {
+    background-color:azure;  
+  }
+  .btn-2 {
+    background-color: #eee;
+  }
+  #display {
+    font-size:30px;
+    /* margin-top:70px; */
+    top:-640px;
+  }
+  .output {
+    font-size:20px;
+    font-weight:bold;
+  }
+  #counter {
+    position:absolute;
+    left:0;     
+    bottom:50px;
+    width:100%;
+    height:30px;
+  }
+  .footer {
+    background-color:#222;
+            color:white;
+            line-height:30px;
+  }
+
+  .quest {        
+    font-family:arial;
+    font-size:30px;
+    color:darkorange;
+    text-shadow:1px 1px 3px #222;
+    padding:2px 1px;
+  }
+
+/*** 슬라이드 부드럽게 내려가도록 변경 ***/
+html { scroll-behavior: smooth; }
+
+@font-face {
+    font-family: 'sponge';
+    src: url('../font/Krabby_Patty.ttf') format('truetype');
+}
+
+h1 { font-size: 80px; color:rgb(255, 255, 69); text-shadow: 4px 4px 4px gray; }
+h2 { font-size: 60px; color:white; text-shadow: 5px 0 rgb(59, 59, 255)
+                                                , 0 5px rgb(59, 59, 255); }
+h3 { font-size: 50px; font-weight:bolder; margin-top: 20px; display:inline-block;}
+h4 { font-size: 30px; margin-top:40px; }
+
+
+.intro_text > h1 ,
+.intro_text > h4 {
+    color:rgb(0b, 19, 30);
+    font-weight: bold;
+}
+
+.intro_text {
+    width:100%;
+    padding:100px 0;
+    text-align: center;
+}
+
+#info_text > p {
+    font-size: 30px;
+}
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+div {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.dog_land {
+    /*** 개판 ***/
+    /* background-image:url('../img/dog_run.gif');
+    bottom: -340px;
+    background-size:600px; */
+
+    /*** 징징이1 ***/
+    /* background-image:url('../img/octo_move.gif');
+    bottom: -320px;
+    background-size:150px; */
+
+    /*** 징징이2 ***/
+    /* background-image:url('../img/octo_move2.gif');
+    bottom: -310px;
+    background-size:200px; */
+
+    /*** 스폰지밥 ***/
+    background-image:url('http://file3.instiz.net/data/file3/2018/02/18/2/5/e/25ec33d9161ca83a9e49f7c12dcc071b.gif');
+    height:150px;
+    bottom: 0px;
+    background-size:150px;
+
+    /*** 핑핑이 ***/
+    /* background-image:url('http://file3.instiz.net/data/file3/2018/02/18/9/a/7/9a707b3119996a337dd0aef2a34d1d08.gif');
+    bottom: -310px;
+    background-size:200px; */
+
+	background-position:center;
+	background-repeat:repeat-x; /* 배경이미지 가로로 반복 */
+	left:0;
+	position:fixed; /* 위치 고정 (스크롤해도 이동 하지 않음) */
+	width:100%; /* position:fixed 일때는 너비를 지정해 줘야 함 */
+	/* display:none; */
+	z-index:100;
+} 
+
+.image1 {
+    background: url(../img/sponge_bob.jpeg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.image2 {
+    background: url(../img/patrick.jpeg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.image3 {
+    background: url(../img/octo.jpeg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.image4 {
+    background: url(../img/crapman.png) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #1e3932;
+    font-size: 1.1rem;
+}
+
+.intro_bg {
+    background-image: url("../img/intro_bg_img.jpeg");
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height:60px;
+    background: rgba(0, 0, 0, 0.7);
+    position:fixed;
+    z-index: 100;
+}
+
+.searchArea {
+    width: 300px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.searchArea > form > input {
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    padding:0 10px;
+}
+
+.searchArea > form > span {
+    width: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size:20px;
+    line-height: 65px;
+    width:calc(180vh - 300px);
+    color:white;
+    padding-right: 10px;
+}
+
+.nav > li {
+    margin-left: 60px;;
+}
+
+.nav > li > a {
+    /* color: rgb(1d, 40, 78); */
+    color:white;
+    font-weight:bolder;
+}
+
+.eachblock {
+    display:block;
+}
+
+.wrapper {
+    visibility:collapse;
+}
+
+#plankton {
+    color:rgb(255, 255, 69);
+    text-shadow: 4px 4px 4px gray;
+}
+
+#sponge { background-color: #f3ec19; }
+#patrick { background-color: #f88f8f; }
+#squid { background-color: #9fcbb9; }
+#crap { background-color: #ea3d32; }
+
+.sponge_header, .patrick_header, .squid_header, .crap_header{
+    margin-top: 50px;
+    vertical-align:middle;
+}
+
+#findbread, #findtomato, #findcheeze {
+    width:auto;
+    display:inline-block;
+    height: auto;
+    margin:10px 0px;
+}
+
+.sponge_info, .patrick_info, .squid_info {
+    top:-600px;
+    display: block;
+    width:100%;
+}
+
+.crap_info, .crap_body {
+    top:-270px;
+    display: block;
+    width:100%;
+}
+
+.sponge_info > p { color:#c17629; }
+.patrick_info > p { color:white; }
+.crap_info > p { color:white; }
+
+.patrick_home {
+    width: 500px;
+}
+
+.source_answer {
+    width:300px;
+    height:20px;
+    display:block;
+}
+
+.sponge_body, .patrick_body, .squid_body {
+    display: none;
+    /* display:block; */
+    justify-content: center;
+    top:-600px;
+    text-align: center;
+    width:760px;
+    height:440px;
+    margin:auto;
+}
+
+.crap_body {
+    display:none;
+}
+
+#burger {
+    display:none;
+    width:574px;
+    height:516px;
+    top:-320px;
+    background-image: url("https://file.namu.moe/file/f3100ccebd6a34ff1b06f5cb7e4b715376cc9a9e0dc18b146607114607f6e31e");
+}
